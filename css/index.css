@@ -1,0 +1,223 @@
+.text-danger-spac {
+  color: blueviolet;
+}
+
+.collapse .icon{
+    color: blueviolet;
+}
+.icon{
+    color: blueviolet;
+}
+.card-icon{
+    font-size: 50px;
+    color: blueviolet;
+
+}
+.card{
+    border-radius: 20px;
+}
+h5{
+    font-weight: 400;
+}
+
+
+@media all and (min-width: 767px) {
+  .navbar .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-top: 0px;
+    margin-left: -15px;
+
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: #fdfdfd;
+    background-color: blueviolet;
+    border-radius: 25px;
+    transition: .5s;
+  }
+  .navbar .nav-item:hover .icon {
+    color: #fdfdfd;
+    transition: 2s;
+  }
+  .dropdown-item:hover{
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: #fdfdfd;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+  }
+}
+
+#intro {
+    
+    background-image:  url("../assets/img/header-bg.jpeg") ;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+  }
+#intro a{
+    border-radius: 25px;
+
+}
+ul li .btn1:hover{
+    background-color: #db0686;
+    color: rgb(10, 11, 11);
+}
+#yourself a{
+    text-align: center;
+    color: blueviolet;
+    background-color: #fdfdfd;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+    /* margin: auto; */
+    
+}
+  
+
+.card-image {
+    position: relative;
+  }
+  
+  .image-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+  .card:hover .image-overlay {
+      opacity: 1;
+    }
+
+    
+.card1 {
+    --background: linear-gradient(to left, #32f72b 0%, #aa5d60 100%);
+    width: 190px;
+    height: 254px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+   }
+   
+   .card1::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card1 .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /*Hover*/
+   .card1:hover::after {
+    opacity: 0;
+   }
+   
+   .card1:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   }
+   .imagess{
+    display: none;
+   }
+
+   .card-bottom:hover .imagess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+   }
+   /* .form-input textarea{
+    border-radius: 65px;
+   } */
+   .form-input input{
+    border-radius: 65px;
+   }
+
+.text-center button{
+    background-color: #5a5858;
+    color: #fdfdfd;
+    font-weight: 800;
+    border-radius: 25px;
+}
+
+.text-center button:hover{
+    background-color: #a79a9a;
+    color: #483f3f;
+}
+
+#submit:active{
+    background-color: #675656;
+    color: #414141;
+}
+
+footer .text-center a{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    color: #ffffff;
+    font-size: 20px;
+    margin: auto 1rem;
+
+}
+.btn:active{
+    outline: none;
+}
